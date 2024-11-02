@@ -166,7 +166,7 @@ h1 {
 }
 
 h3 {
-	font-size: larger;
+	font-size: x-large;
 }
 
 h4 {
@@ -183,15 +183,18 @@ h4 {
 }
 /* Carrossel
 ------------------------------------ */
-
+#midia {
+	position: relative;
+}
 
 #carrossel {
 	display: flex;
+	position: relative;
 	height: 600px;
 	width: 100%;
 	padding: 20px 0px;
 	margin: 20px 0px;
-	overflow-x: auto;
+	overflow: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -208,6 +211,37 @@ h4 {
 	width: 400px;
 	object-fit: cover;
 }
+
+#carrossel-btns {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+}
+
+#carrossel-btns button {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	background-color: white;
+	border-radius: 50px;
+	font-size: xx-large;
+	border: 2px solid #770000;
+	margin-left: 5px;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+#carrossel-btns button:hover {
+	transform: scale(1.1); /* Efeito de expansão ao passar o mouse */
+}
+
+
+#carrossel-btns button img {
+	width: 45px;
+}
+
 
 
 /* Rodapé
@@ -261,9 +295,6 @@ footer>p a {
 	margin: 0px;
 }
 
-
-
-
 .quad {
 	display: flex;
 	align-items: center;
@@ -289,6 +320,11 @@ footer>p a {
 
 footer section {
 	padding-bottom: 0;
+}
+
+footer h3:hover {
+	cursor: pointer;
+	color: #86521a;
 }
 
 /* Formulários

@@ -1,9 +1,9 @@
-function scrollLeft() {
+function direita() {
     const container = document.getElementById("carrossel");
-    container.scrollBy(20, 20)
+    container.scrollBy(500, 0)
 }
 
-function scrollRight() {
+function esquerda() {
     const container = document.getElementById("carrossel");
-    container.scrollBy(20,20);
+    container.scrollBy(-500, 0);
 }
