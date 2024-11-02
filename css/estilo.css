@@ -181,6 +181,33 @@ h4 {
 	width: 80%;
 	height: 1px;
 }
+/* Carrossel
+------------------------------------ */
+
+
+#carrossel {
+	display: flex;
+	height: 600px;
+	width: 100%;
+	padding: 20px 0px;
+	margin: 20px 0px;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	margin: 0px 10px;
+}
+
+.card img {
+	height: 100%;
+	width: 400px;
+	object-fit: cover;
+}
 
 
 /* Rodapé
@@ -210,9 +237,31 @@ footer>p a {
 }
 
 #acervo {
-	padding: 20px 0px;
+	display: flex;
+	align-items: center;
+	text-align: center;
 	cursor: pointer;
+
+	background-color: #EAC48E;
+	border-radius: 10px;
+	width: 20%;
+	color: black;
+	font-size: x-large;
+
+	overflow: hidden;
+	margin: 20px;
 }
+
+#acervo:hover {
+	background-color: rgba(214, 180, 132, 0.718)
+}
+
+#acervo p {
+	width: 70%;
+	margin: 0px;
+}
+
+
 
 
 .quad {
