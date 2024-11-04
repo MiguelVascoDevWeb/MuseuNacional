@@ -4,6 +4,7 @@ body {
 
 	font-family: "Blinker", sans-serif;
 	background-color: #FFF8F3;
+	scroll-behavior: smooth;
 }
 
 #container {
@@ -50,15 +51,53 @@ nav ul li {
 	display: inline;
 }
 
-nav ul li a:link {	
+nav ul li .nav-options:link {	
 	margin-right: 25px;
 	padding-bottom: 3px;
 	text-transform: uppercase;
 	transition: font-size 0.5s;
 }
 
-nav ul li a:hover {
+nav ul li .nav-options:hover {
 	font-size: larger;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropbtn {
+	text-transform: uppercase;
+	border: none;
+	background: none;
+	color: #EAC48E;
+	transition: font-size 0.5s;
+	padding: 0px 0px 3px 0px;
+	margin-right: 25px;
+}
+
+.dropbtn:hover {
+	font-size: larger;
+	color: #eac48e98;
+}
+
+.dropdown:hover .dropdown-content {
+	display: flex;
+	position: absolute;
+}
+
+.dropdown-content {
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	background-color: #770000;
+	width: 200px;
+}
+
+.dropdown:hover .dropbtn {
+	font-size: larger;
+	color: #eac48e98;
 }
 
 /* Principal 
@@ -186,6 +225,11 @@ h4 {
 	width: 80%;
 	height: 1px;
 }
+
+p {
+	font-size: x-large;
+}
+
 /* Carrossel
 ------------------------------------ */
 #midia {
@@ -372,10 +416,6 @@ legend {
 
 #materia {
 	max-width: 700px;
-}
-
-#materia p {
-	font-size: x-large;
 }
 
 #materia h1 {
