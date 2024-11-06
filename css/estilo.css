@@ -93,6 +93,8 @@ nav ul li .nav-options:hover {
 	position: absolute;
 	background-color: #770000;
 	width: 200px;
+	border-radius: 0px 0px 10px 10px;
+	border: 1px solid white;
 }
 
 .dropdown:hover .dropbtn {
@@ -259,6 +261,12 @@ p {
 	height: 100%;
 	width: 400px;
 	object-fit: cover;
+	transition: width 0.3s ease ;
+}
+
+.card img:hover {
+	width: 450px;
+	cursor: pointer;
 }
 
 #carrossel-btns {
@@ -405,43 +413,4 @@ fieldset {
 legend {
 	display: none;
 }
-
-/*Blog
-------------------------*/
-#conteudo-blog {
-	display: flex;
-	justify-content: center;
-	padding: 10px 50px;
-}
-
-#materia {
-	max-width: 700px;
-}
-
-#materia h1 {
-	font-size: 3em;
-	text-transform: none;
-	text-align: left;
-}
-
-#autor {
-	display: flex;
-	align-items: center;
-	border-top: 1px solid black;
-	border-bottom: 1px solid gray;
-	margin: 30px 0px;
-	padding: 5px 0px;
-}
-
-#palavras-chave {
-	display: flex;
-}
-
-#palavras-chave div {
-	background-color: lightgray;
-	margin: 0px 5px;
-	padding: 10px;
-	border-radius: 10px;
-}
-
 
