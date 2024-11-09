@@ -1,5 +1,9 @@
 /* Estrutura do site
 ------------------------------------ */
+
+html{
+	scroll-behavior: smooth;
+}
 body {
 
 	font-family: "Blinker", sans-serif;
@@ -34,9 +38,13 @@ a:hover {
 /* Barra de navegação 
 ------------------------------------ */
 header {
-	padding: 15px 0;
+	padding-bottom: 0.1px;
 	background-color: #770000;
 	text-align: center;
+	width: 100%;
+	z-index: 10;
+	position: sticky;
+	top: 0px;
 }
 
 header hr {
@@ -45,6 +53,8 @@ header hr {
 
 header img {
 	cursor: pointer;
+	width: 20%;
+
 }
 
 nav ul li {
@@ -156,48 +166,15 @@ aside {
 	margin-left: 37px;
 }
 
-#exposicoes {
-	float: left;
-
-	margin: 15px 0 0 25px;
-}
-
-#historia p {
+article p, article ul {
 	text-align: justify;
 	padding: 0% 5%;
-}
-
-#historia article {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
 }
 
 #midia {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-}
-
-.titulos {
-	height: 50px;
-}
-
-.titulos h3{
-	position: absolute;
-	background-color: white;
-
-	left: 50%;
-
-transform: translate(-50%);
-}
-
-.titulos hr{
-	position: absolute;
-	margin-top: 20px;
-	border: 0.1px solid black	;
-	width: 100%;
-
 }
 
 h1 {
@@ -224,11 +201,11 @@ h4 {
 
 .hr {
 	background-image: linear-gradient(to right, #fff8f300 0%, #D69936 50%, #fff8f300 100%);
-	width: 80%;
+	width: 100%;
 	height: 1px;
 }
 
-p {
+p, article li{
 	font-size: x-large;
 }
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Museu Nacional</title>
+    <title>Museu Nacional - Acervo</title>
     <meta charset="utf-8">
 
     <!-- Normalize CSS -->
@@ -22,36 +22,100 @@
 
 </head>
 <body>
-    <header><!-- Início header -->
-		<img src="../img/logo.png" width="30%" onclick="window.location.href='index.html'">
+	<header><!-- Início header -->
+		<img src="../img/logo.png" width="30%" onclick="window.location.href='../index.html'">
 		<hr>
 		<nav><!-- Início nav -->
 			<ul>
-				<li><a class="nav-options" href="index.html">Home</a></li>
+				<li><a class="nav-options" href="../index.html">Home</a></li>
 				<li>
 					<div class="dropdown">
 						<button class="dropbtn">Exposições</button>
 						<div class="dropdown-content">
-							<a class="drop-item" href="">Antropologia Biológica</a>
-							<a href="">Arqueologia</a>
-							<a href="">Etnologia</a>
-							<a href="">Geologia</a>
-							<a href="">Paleontologia</a>
-							<a href="">Zoologia</a>
+							<a class="drop-item" href="exposicoes/exposicoes.html">Antropologia Biológica</a>
+							<a href="../exposicoes/exposicoes.html#arqueologia">Arqueologia</a>
+							<a href="../exposicoes/exposicoes.html#etnologia">Etnologia</a>
+							<a href="../exposicoes/exposicoes.html#geologia">Geologia</a>
+							<a href="../exposicoes/exposicoes.html#paleontologia">Paleontologia</a>
+							<a href="../exposicoes/exposicoes.html#zoologia">Zoologia</a>
 						</div>
 					</div>
 				</li>
-				<li><a class="nav-options" href="#">Acervo</a></li>
-				<li><a class="nav-options" href="#">Mídia</a></li>
+				<li><a class="nav-options" href="../acervo/acervo.html">Acervo</a></li>
+				<li><a class="nav-options" href="../index.html#midia">Mídia</a></li>
 				<li><a class="nav-options" href="#footer-footer">contato</a></li>
 			</ul>
 		</nav><!--/fim nav -->
-	</header>
 
-    <main>
-        <section>
+	</header><!--/fim header -->
+
+    <main id="conteudo">
+        <section id="img-acervo">
             <div id="main-img">
-                <img src="https://www.museunacional.ufrj.br/MUSEU2016/img/slide/01.jpg" alt="">
+                <img src="../img/img-acervo1.jpg">
+            </div>
+        </section>
+        <section>
+            <article>
+                <h1>Acervo</h1>
+                <div class="hr"></div>
+                <p>
+                    A formação do acervo do Museu deu-se primeiramente pela transferência para sua sede, de instrumentos, 
+                    máquinas e gabinetes dispersos em outras instituições, pela doação de objetos de arte e da Antiguidade 
+                    pela família real, pelas coleções existentes na Casa dos Pássaros, pela coleção de mineralogia, conhecida 
+                    como Coleção Werner, e por peças etnográficas provenientes das províncias do Brasil. Hoje, com um acervo 
+                    cultural e científico relevante é considerado o maior museu de história natural da América Latina.
+                </p>
+                <p>
+                    A atividade de memória do Museu Nacional /UFRJ está representada no seu acervo sob diversas formas:
+                </p>
+                <ul>
+                    <li>
+                        Acervo Bibliográfico formado de livros, folhetos, periódicos, multimeios, in-fólios, obras raras, 
+                        mapas, teses e dissertações pertencentes à Biblioteca do Museu Nacional e da Biblioteca Francisca 
+                        Keller, do Programa de Pós-Graduação em Antropologia Social (PPGAS);
+                    </li>
+                    <li>
+                        Acervo Científico composto por exemplares representativos da biodiversidade, fósseis, objetos 
+                        etnográficos e arqueológicos, pertencentes aos Departamentos de Antropologia, de Botânica, de 
+                        Entomologia, de Geologia e Paleontologia, de Invertebrados e de Vertebrados;
+                    </li>
+                    <li>
+                        Acervo Documental constituído de material arquivístico, custodiado pela Seção de Memória e Arquivo 
+                        (SEMEAR) e pelo Centro de Documentação em Línguas Indígenas (CELIN).
+                    </li>
+                </ul>
+            </article>
+            <section id="img-acervo">
+                <div id="main-img">
+                    <img src="../img/img-acervo2.jpg">
+                </div>
+            </section>
+            <article>
+                <h1>Lançamento: Museu Nacional - Panorama dos Acervos: passado, presente e futuro</h1>
+                <div class="hr"></div>
+                <p>
+                    Foi lançado no dia 31 de julho o livreto "Museu Nacional - Panorama dos acervos: passado, presente e 
+                    futuro". Fruto de uma parceria entre o Museu Nacional/UFRJ e o British Council Brasil, " a publicação 
+                    vem reafirmar a missão do Museu Nacional/UFRJ como instituição precursora no Brasil em pesquisa, guarda 
+                    de acervos e formação de recursos humanos nas áreas de História Natural e Antropologia", conforme ressalta 
+                    Cristiana Serejo, vice-diretora do MN/UFRJ e editora da publicação.
+                </p>
+            </article>
+            
+            <div id="acesso-pdf">
+                <h1>Acesso .PDF</h1>
+                <div class="hr"></div>
+                <div id="acessos-pdf">
+                    <div class="acesso-card" onclick="window.open('https://www.museunacional.ufrj.br/destaques/docs/panorama_de_acervos/livro_acervos_museu_nacional.pdf', '_blank')">
+                        <img class="capa" src="../img/capa_livro-pt.jpg" alt="">
+                        <img class="bandeira" src="../img/brasil_icon.png" >
+                    </div>
+                    <div class="acesso-card" onclick="window.open('https://www.museunacional.ufrj.br/destaques/docs/panorama_de_acervos/book_museunacional_collections_2020.pdf', '_blank')">
+                        <img class="capa" src="../img/capa_livro-en.jpg" alt="">
+                        <img class="bandeira" src="../img/EUA_icon.png" >
+                    </div>
+                </div>
             </div>
         </section>
     </main>
