@@ -1,0 +1,37 @@
+/*Blog
+------------------------*/
+#conteudo-blog {
+	display: flex;
+	justify-content: center;
+	padding: 10px 50px;
+}
+
+#materia {
+	max-width: 700px;
+}
+
+#materia h1 {
+	font-size: 3em;
+	text-transform: none;
+	text-align: left;
+}
+
+#autor {
+	display: flex;
+	align-items: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid gray;
+	margin: 30px 0px;
+	padding: 5px 0px;
+}
+
+#palavras-chave {
+	display: flex;
+}
+
+#palavras-chave div {
+	background-color: lightgray;
+	margin: 0px 5px;
+	padding: 10px;
+	border-radius: 10px;
+}
