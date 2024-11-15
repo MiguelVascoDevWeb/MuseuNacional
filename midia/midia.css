@@ -1,0 +1,13 @@
+.titulo {
+	text-transform: uppercase;
+    font-family: "Blinker", sans-serif;
+    color: black;
+}
+
+.nav-options, .dropdown {
+    font-family: "Blinker", sans-serif;
+}
+
+.rodape {
+    font-family: "Blinker", sans-serif;
+}

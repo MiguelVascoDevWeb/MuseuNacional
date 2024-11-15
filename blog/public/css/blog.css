@@ -35,3 +35,59 @@
 	padding: 10px;
 	border-radius: 10px;
 }
+
+/*Acesso Posts do blog
+----------------------------*/
+
+#cards-section{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+.card-blog {
+	overflow: hidden;
+	border: solid 5px #770000;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	width: 500px;
+	transition: border 0.4s;
+}
+
+.card-blog:hover {
+	cursor: pointer;
+	border: solid 5px rgba(255, 255, 255, 0);
+}
+
+.card-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5px;
+	text-align: center;
+	height: 50%;
+}
+
+.card-text h3 {
+	color: gray;
+	margin: 0px;
+}
+
+.card-text h2 {
+	color: black;
+	margin-top: 0px;
+}
+
+.img-card-blog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	height: 50%;
+	background-color: #770000;
+}
+
+.img-card-blog img{
+	width: 100%;
+}
