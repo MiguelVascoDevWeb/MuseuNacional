@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Museu Nacional</title>
+	<meta charset="utf-8">
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+
+	<!-- Estilo customizado -->
+	<link rel="stylesheet" type="text/css" href="/css/estilo.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+	<link rel="icon" href="https://www.museunacional.ufrj.br/MUSEU2016/img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<header><!-- Início header -->
+		<img src="/images/logo.png" width="30%" onclick="window.location.href='/home'">
+		<hr>
+		<nav><!-- Início nav -->
+			<ul>
+				<li><a class="nav-options" href="/home">Home</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Exposições</button>
+						<div class="dropdown-content">
+							<a class="drop-item" href="/exposicoes">Antropologia Biológica</a>
+							<a href="/exposicoes#arqueologia">Arqueologia</a>
+							<a href="/exposicoes#etnologia">Etnologia</a>
+							<a href="/exposicoes#geologia">Geologia</a>
+							<a href="/exposicoes#paleontologia">Paleontologia</a>
+							<a href="/exposicoes#zoologia">Zoologia</a>
+						</div>
+					</div>
+				</li>
+				<li><a class="nav-options" href="/acervo">Acervo</a></li>
+				<li><a class="nav-options" href="/blog/home">Blog</a></li>
+				<li><a class="nav-options" href="/midia">Mídia</a></li>
+				<li><a class="nav-options" href="#footer-footer">contato</a></li>
+			</ul>
+		</nav><!--/fim nav -->
+
+	</header><!--/fim header -->
+		
+		<main id="conteudo"><!-- Início conteudo -->
+
+			<section id="capa">
+				<img src="/images/museu_grandao.jpg">
+			</section>
+
+			<section id="historia">
+				<article>
+					<h1>o Museu Nacional</h1>
+					<div class="hr"></div>
+					<p>
+						Na noite do dia 02 de setembro de 2018, o Paço de São Cristóvão que abrigava grande parte do acervo 
+						do Museu Nacional foi atingindo por um incêndio de grandes proporções. Este foi o maior desastre da 
+						história da instituição. Documentos, livros e coleções desapareceram; salas de aula, arquivos e 
+						laboratórios viraram cinzas.
+					</p>
+					<p>
+						A área mais afetada pelas chamas foi a de Antropologia, entre os destaques que se perderam estavam o 
+						dinossauro conhecido ocmo Dinopata, as múmias egípcias; o crânio de Luzia, o fóssil humano mais antigo 
+						já encontrado no Brasil, danificado entre os escombros. 
+					</p>
+				</article>
+			</section>
+
+			<section id="midia">
+				<h1>
+					Imagens
+				</h1>
+				<div class="hr"></div>
+				<div id="carrossel">
+					<div class="card">
+						<img src="/images/museu1.webp" onclick="window.open('/images/museu1.webp', '_blank')">
+					</div>
+					<div class="card">
+						<img src="/images/museu2.jpg" onclick="window.open('/images/museu2.jpg', '_blank')">
+					</div>
+					<div class="card">
+						<img src="/images/museu4.jpg" onclick="window.open('/images/museu4.jpg', '_blank')">
+					</div>
+					<div class="card">
+						<img src="/images/museu5.webp" onclick="window.open('/images/museu5.webp', '_blank')">
+					</div>
+					<div class="card">
+						<img src="/images/museu3.jpeg" onclick="window.open('/images/museu3.jpeg', '_blank')">
+					</div>
+					<div class="card">
+						<img src="/images/museu6.jpg" onclick="window.open('/images/museu6.jpg', '_blank')">
+					</div>
+					<div class="card">
+						<img src="/images/museu7.webp" onclick="window.open('/images/museu7.webp', '_blank')">
+					</div>
+				</div>
+
+				<div id="carrossel-btns">
+					<button onclick="esquerda()"><img src="/images/setinha-esquerda.png"></button>
+					<button onclick="direita()"><img src="/images/setinha-direita.png" alt=""></button>
+				</div>
+			</section>
+
+		</main><!--/fim conteudo -->
+
+		<footer>
+			<section>
+				<h1>Veja nosso acervo</h1>
+				<div id="acervo" onclick="window.location.href='/acervo'">
+					<p><strong>Acervo</strong></p>
+					<img src="/images/seta.png" width="30%">
+				</div>
+				<div class="hr"></div>
+				<img src="/images/logo.png" width="40%">
+				<div class="hr"></div>
+				<h3 onclick="window.location.href='/blog/home'">Nosso blog</h3>
+			</section>
+			
+			<div id="footer-footer">
+				<div class="quad" onclick="window.location.href='https://www.instagram.com/museunacionalufrj/';">
+					<img src="/images/instagram.png"> 
+				</div>
+				<div class="quad" onclick="window.location.href='https://www.youtube.com/channel/UC0_2S5qBQlr1twzbra3XJag'">
+					<img src="/images/youtube.png"> 
+				</div>
+				<div class="quad" onclick="window.location.href='https://x.com/museunacional'">
+					<img src="/images/twitter.png"> 
+				</div>
+				<div class="quad" onclick="window.location.href='https://www.facebook.com/MuseuNacionalUFRJ/?locale=pt_BR'">
+					<img src="/images/facebook.png"> 
+				</div>
+			</div>
+		</footer>
+
+		<script src="/javascript/museu.js"></script>
+
+</body>
+</html>

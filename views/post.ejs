@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title> <%= post.title %> </title>
+	<meta charset="utf-8">
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+
+	<!-- Estilo customizado -->
+	<link rel="stylesheet" type="text/css" href="/css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="/css/blog.css">
+	<link rel="icon" href="/images/logo.png">
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script> 
+	<![endif]-->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<header><!-- Início header -->
+		<img src="/images/logo.png" width="30%" onclick="window.location.href='/home'">
+		<hr>
+		<nav><!-- Início nav -->
+			<ul>
+				<li><a class="nav-options" href="/home">Home</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Exposições</button>
+						<div class="dropdown-content">
+							<a class="drop-item" href="/exposicoes">Antropologia Biológica</a>
+							<a href="/exposicoes#arqueologia">Arqueologia</a>
+							<a href="/exposicoes#etnologia">Etnologia</a>
+							<a href="/exposicoes#geologia">Geologia</a>
+							<a href="/exposicoes#paleontologia">Paleontologia</a>
+							<a href="/exposicoes#zoologia">Zoologia</a>
+						</div>
+					</div>
+				</li>
+				<li><a class="nav-options" href="/acervo">Acervo</a></li>
+				<li><a class="nav-options" href="/blog/home">Blog</a></li>
+				<li><a class="nav-options" href="/midia">Mídia</a></li>
+				<li><a class="nav-options" href="#footer-footer">contato</a></li>
+			</ul>
+		</nav><!--/fim nav -->
+
+	</header><!--/fim header -->
+		
+	<main id="conteudo">
+		<div id="conteudo-blog"><!-- Início conteudo -->
+			<div id="materia">
+				<section>
+					<h1 id="titulo-blog">
+						<%= post.title %>
+					</h1>
+					<h2 id="subititulo">
+						<%= post.subtitle %>
+					</h2>
+					<div id="autor">
+						
+						<span id="autor-nome"><strong> <%= post.author %> </strong></span>
+						<span id="autor-data"> <%= post.date %> </span>
+					</div>
+	
+					<div class="imagem">
+						<img src="/images/museu1.webp" width="100%">
+					</div>
+					
+				</section>
+				<section>
+					<% post.content.forEach(section => { %>
+						<p> <%= section.text %> </p>
+							
+						
+					<% }); %>
+					
+				</section>
+
+				<div id="palavras-chave">
+					<% post.palavra_chave.forEach(section => { %>
+						<p><%= section.chave %></p>
+						<% }); %>
+				</div>
+			</div>
+		</div><!--/fim conteudo --> 
+
+	</main>
+
+		<footer>
+			<section>
+				<h1>Veja nosso acervo</h1>
+				<div id="acervo">
+					<p><strong>Acervo</strong></p>
+					<img src="/images/seta.png" width="30%">
+				</div>
+				<div class="hr"></div>
+				<img src="/images/logo.png" width="40%">
+				<div class="hr"></div>
+				<h3>Nosso blog</h3>
+			</section>
+			
+			<div id="footer-footer">
+				<div class="quad" onclick="window.location.href='https://www.instagram.com/museunacionalufrj/';">
+					<img src="/images/instagram.png"> 
+				</div>
+				<div class="quad" onclick="window.location.href='https://www.youtube.com/channel/UC0_2S5qBQlr1twzbra3XJag'">
+					<img src="/images/youtube.png"> 
+				</div>
+				<div class="quad" onclick="window.location.href='https://x.com/museunacional'">
+					<img src="/images/twitter.png"> 
+				</div>
+				<div class="quad" onclick="window.location.href='https://www.facebook.com/MuseuNacionalUFRJ/?locale=pt_BR'">
+					<img src="/images/facebook.png"> 
+				</div>
+			</div>
+		</footer>
+
+</body>
+</html>
